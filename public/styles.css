@@ -38,7 +38,7 @@ footer p {
 .note {
   background: #fff;
   border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
+
   padding: 10px;
   width: 240px;
   margin: 16px;
@@ -78,6 +78,20 @@ footer p {
   bottom: 0;
   transform-origin: left;
   transform: skewY(8deg);
+  filter: blur(0.2);
+  z-index: -1;
+}
+.note:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 20px;
+  background: #000;
+  left: 0;
+  bottom: 0;
+  transform-origin: right;
+  transform: skewY(-8deg);
+  filter: blur(0.9);
   z-index: -1;
 }
 
