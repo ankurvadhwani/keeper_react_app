@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Fab } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
+import TitleIcon from "@material-ui/icons/Title";
 
 function CreateArea(props) {
   let [data, setData] = useState({
@@ -21,7 +22,7 @@ function CreateArea(props) {
   return (
     <div>
       <form>
-        <input onChange={handleChange} name="title" placeholder="Title" />
+        <input onChange={handleChange} name="title" placeholder="title" />
         <textarea
           onChange={handleChange}
           name="content"
