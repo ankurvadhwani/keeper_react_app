@@ -78,7 +78,7 @@ footer p {
   bottom: 0;
   transform-origin: left;
   transform: skewY(8deg);
-  filter: blur(0.2);
+  box-shadow: 0px 0px 2px 10px #333;
   z-index: -1;
 }
 .note:after {
@@ -127,4 +127,10 @@ form .addbtn {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+.markicon {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
